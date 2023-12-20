@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="root" prefHeight="732.0" prefWidth="1370.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.MobileVision.controller.DashBoardForm">
+   <children>
+      <ImageView fitHeight="740.0" fitWidth="1370.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assests/img/Main%20Form.png" />
+         </image>
+      </ImageView>
+      <JFXButton layoutX="4.0" layoutY="109.0" onAction="#btnCustomerOnAction" prefHeight="56.0" prefWidth="176.0" style="-fx-background-color: #9980FA;" text="Customer" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="26.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="4.0" layoutY="174.0" onAction="#btnOrderOnAction" prefHeight="56.0" prefWidth="176.0" style="-fx-background-color: #9980FA;" text="Orders" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="26.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="4.0" layoutY="430.0" onAction="#btnSupplierOnAction" prefHeight="56.0" prefWidth="176.0" style="-fx-background-color: #9980FA;" text="Supplier" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="26.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="4.0" layoutY="239.0" onAction="#btnRepairOnAction" prefHeight="56.0" prefWidth="176.0" style="-fx-background-color: #9980FA;" text="Repair" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="26.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="4.0" layoutY="303.0" onAction="#btnPaymentOnAction" prefHeight="56.0" prefWidth="176.0" style="-fx-background-color: #9980FA;" text="Payment" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="26.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="4.0" layoutY="366.0" onAction="#btnItemOnAction" prefHeight="56.0" prefWidth="176.0" style="-fx-background-color: #9980FA;" text="Item" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="26.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="4.0" layoutY="493.0" onAction="#btnSalaryOnAction" prefHeight="56.0" prefWidth="176.0" style="-fx-background-color: #9980FA;" text="Salary" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="26.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="4.0" layoutY="556.0" onAction="#btnEmployeeOnAction" prefHeight="56.0" prefWidth="176.0" style="-fx-background-color: #9980FA;" text="Employee" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="26.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="btnLogout" layoutX="4.0" layoutY="660.0" onAction="#btnLogOutOnAction" prefHeight="56.0" prefWidth="176.0" style="-fx-background-color: purple;" text="Logout" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="26.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="4.0" layoutY="44.0" onAction="#btnHomeOnAction" prefHeight="56.0" prefWidth="176.0" style="-fx-background-color: #9980FA;" text="Home" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="26.0" />
+         </font>
+      </JFXButton>
+      <AnchorPane fx:id="root" layoutX="192.0" layoutY="83.0" prefHeight="597.0" prefWidth="1176.0">
+         <children>
+            <ImageView fitHeight="670.0" fitWidth="1176.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assests/img/DashBoard.png" />
+               </image>
+            </ImageView>
+            <Text fill="#6927bf" layoutX="97.0" layoutY="176.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Welcome To" wrappingWidth="441.576171875">
+               <font>
+                  <Font name="System Bold" size="69.0" />
+               </font>
+            </Text>
+            <ImageView fitHeight="576.0" fitWidth="1000.0" layoutX="319.0" layoutY="37.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assests/icon/MoBile_Matrix-removebg-preview.png" />
+               </image>
+            </ImageView>
+            <Text fill="#6927bf" layoutX="88.0" layoutY="514.0" strokeType="OUTSIDE" strokeWidth="0.0" text=" a sophisticated standalone application designed to revolutionize the way you manage Mobile Vision Data. As the ultimate solution for mobile shop proprietors, this application empowers you to efficiently navigate and oversee your entire inventory with unparalleled ease and precision." textAlignment="CENTER" wrappingWidth="983.37890625">
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </Text>
+         </children></AnchorPane>
+   </children>
+</AnchorPane>

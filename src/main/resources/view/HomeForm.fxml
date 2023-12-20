@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="625.0" prefWidth="1158.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.MobileVision.controller.HomeForm">
+   <children>
+      <ImageView fitHeight="625.0" fitWidth="1158.0" layoutX="1.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assests/img/Home%20Form%201.png" />
+         </image>
+      </ImageView>
+      <AnchorPane layoutX="14.0" layoutY="13.0" prefHeight="367.0" prefWidth="486.0" style="-fx-background-color: d2e8e4;">
+         <children>
+            <Text fill="#8a8a8a" layoutX="26.0" layoutY="237.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Price*" wrappingWidth="92.13671875">
+               <font>
+                  <Font name="System Bold" size="25.0" />
+               </font>
+            </Text>
+            <Text fill="#8a8a8a" layoutX="25.0" layoutY="283.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Qty On Hand*" wrappingWidth="171.13671875">
+               <font>
+                  <Font name="System Bold" size="25.0" />
+               </font>
+            </Text>
+            <TextField fx:id="txtPrice" layoutX="203.0" layoutY="209.0" prefHeight="31.0" prefWidth="165.0" />
+            <TextField fx:id="txtQtyOnHand" layoutX="203.0" layoutY="259.0" prefHeight="31.0" prefWidth="165.0" />
+            <TextField fx:id="txtDescription" layoutX="204.0" layoutY="160.0" prefHeight="31.0" prefWidth="165.0" />
+            <Text fill="#8a8a8a" layoutX="24.0" layoutY="186.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Description*" wrappingWidth="182.13671875">
+               <font>
+                  <Font name="System Bold" size="25.0" />
+               </font>
+            </Text>
+         </children></AnchorPane>
+      <TextField fx:id="txtSearchBar" layoutX="29.0" layoutY="108.0" prefHeight="36.0" prefWidth="448.0" />
+      <Text fill="#8a8a8a" layoutX="27.0" layoutY="72.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Search Items ..........." wrappingWidth="512.13671875">
+         <font>
+            <Font size="39.0" />
+         </font>
+      </Text>
+      <JFXButton buttonType="RAISED" contentDisplay="RIGHT" layoutX="370.0" layoutY="110.0" onAction="#btnSearchOnAction" prefHeight="31.0" prefWidth="105.0" style="-fx-background-color: #2980b9;" text="Search" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <graphic>
+            <ImageView fitHeight="20.0" fitWidth="23.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assests/icon/icons8-search-50.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" contentDisplay="RIGHT" layoutX="380.0" layoutY="335.0" onAction="#btnClearOnAction" prefHeight="30.0" prefWidth="105.0" style="-fx-background-color: #2980b9;" text="Clear" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <graphic>
+            <ImageView fitHeight="20.0" fitWidth="23.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../../learning%20room/thogakade-mvc/src/main/resources/icon/clear.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </JFXButton>
+      <Text fill="#d2e8e4" layoutX="296.0" layoutY="461.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+      <Label fx:id="time" layoutX="910.0" layoutY="32.0" prefHeight="70.0" prefWidth="197.0" textFill="#1175d3">
+         <font>
+            <Font size="48.0" />
+         </font>
+      </Label>
+      <Label fx:id="date" layoutX="901.0" layoutY="91.0" prefHeight="70.0" prefWidth="236.0" textFill="#3f8bd3">
+         <font>
+            <Font name="System Bold" size="36.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="417.0" fitWidth="448.0" layoutX="717.0" layoutY="187.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assests/icon/MoBile_Matrix-removebg-preview.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="root" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: GRAY;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.MobileVision.controller.LoginForm">
+   <children>
+      <ImageView fitHeight="400.0" fitWidth="600.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assests/img/Login%20page.png" />
+         </image>
+      </ImageView>
+      <TextField fx:id="txtUserName" layoutX="384.0" layoutY="123.0" prefHeight="25.0" prefWidth="176.0" />
+      <Button layoutX="442.0" layoutY="222.0" mnemonicParsing="false" onAction="#btnLoginOnAction" prefHeight="25.0" prefWidth="57.0" text="Login" />
+      <Hyperlink layoutX="516.0" layoutY="258.0" onAction="#hyperSignUpOnAction" text="Sign Up ">
+         <font>
+            <Font size="11.0" />
+         </font>
+      </Hyperlink>
+      <PasswordField fx:id="txtPassword" layoutX="384.0" layoutY="175.0" prefHeight="25.0" prefWidth="176.0" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="root5" prefHeight="625.0" prefWidth="1158.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.MobileVision.controller.RepairForm">
+   <children>
+      <ImageView fitHeight="625.0" fitWidth="1158.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assests/img/Repair%20Form.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="449.0" layoutY="21.0" prefHeight="53.0" prefWidth="333.0" text="Repair Manage" textFill="#2c3e50">
+         <font>
+            <Font name="System Bold" size="36.0" />
+         </font>
+      </Label>
+      <Label layoutX="69.0" layoutY="122.0" text="Repair Id*" textFill="#363232">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtId" layoutX="261.0" layoutY="120.0" prefHeight="33.0" prefWidth="276.0" />
+      <Label layoutX="70.0" layoutY="176.0" text="Customer Contact*" textFill="#363232">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="70.0" layoutY="227.0" text="Employee Id*" textFill="#363232">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="595.0" layoutY="177.0" text="Repair Price" textFill="#363232">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="592.0" layoutY="123.0" text="Repair Description" textFill="#363232">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="598.0" layoutY="228.0" text="Repair Date" textFill="#363232">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtCustomerContact" layoutX="263.0" layoutY="174.0" onAction="#txtSearchOnAction" prefHeight="33.0" prefWidth="276.0" />
+      <TableView fx:id="tblRepair" layoutX="181.0" layoutY="340.0" prefHeight="273.0" prefWidth="778.0">
+         <columns>
+            <TableColumn fx:id="colRepairId" prefWidth="72.0" text="Repair Id" />
+            <TableColumn fx:id="colRepairDescription" prefWidth="200.0" text="Repair description" />
+            <TableColumn fx:id="colRepairPrice" prefWidth="100.0" text="Repair Price" />
+            <TableColumn fx:id="colCustomerContact" prefWidth="200.0" text="Customer Contact" />
+            <TableColumn fx:id="colEmployeeId" prefWidth="100.0" text="Employee Id" />
+            <TableColumn fx:id="colRepairDate" prefWidth="100.0" text="Repair Date" />
+         </columns>
+      </TableView>
+      <TextField fx:id="txtId1" layoutX="264.0" layoutY="228.0" prefHeight="33.0" prefWidth="276.0" />
+      <TextField fx:id="txtDate" layoutX="781.0" layoutY="231.0" prefHeight="33.0" prefWidth="276.0" />
+      <TextField fx:id="txtPrice" layoutX="781.0" layoutY="178.0" prefHeight="33.0" prefWidth="276.0" />
+      <TextField fx:id="txtRepairDescription" layoutX="781.0" layoutY="125.0" prefHeight="33.0" prefWidth="276.0" />
+      <JFXButton buttonType="RAISED" contentDisplay="RIGHT" layoutX="290.0" layoutY="295.0" onAction="#btnClearOnAction" prefHeight="30.0" prefWidth="105.0" style="-fx-background-color: #7f8c8d;" text="Clear" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <graphic>
+            <ImageView fitHeight="20.0" fitWidth="23.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../../learning%20room/thogakade-mvc/src/main/resources/icon/clear.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" contentDisplay="RIGHT" layoutX="454.0" layoutY="295.0" onAction="#btnDeleteOnAction" prefHeight="31.0" prefWidth="105.0" style="-fx-background-color: #e74c3c;" text="Delete" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <graphic>
+            <ImageView fitHeight="20.0" fitWidth="23.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../../learning%20room/thogakade-mvc/src/main/resources/icon/delete.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" contentDisplay="RIGHT" layoutX="608.0" layoutY="295.0" onAction="#btnUpdateOnAction" prefHeight="31.0" prefWidth="105.0" style="-fx-background-color: #e67e22;" text="Update" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <graphic>
+            <ImageView fitHeight="20.0" fitWidth="23.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../../learning%20room/thogakade-mvc/src/main/resources/icon/update.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" contentDisplay="RIGHT" layoutX="757.0" layoutY="295.0" onAction="#btnSaveOnAction" prefHeight="31.0" prefWidth="105.0" style="-fx-background-color: #2980b9;" text="Save" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <graphic>
+            <ImageView fitHeight="20.0" fitWidth="23.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../../learning%20room/thogakade-mvc/src/main/resources/icon/save.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" contentDisplay="RIGHT" layoutX="1003.0" layoutY="573.0" onAction="#btnPrintOnAction" prefHeight="31.0" prefWidth="105.0" style="-fx-background-color: Green;" text="Report" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <graphic>
+            <ImageView fitHeight="20.0" fitWidth="23.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assests/icon/print48.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </JFXButton>
+   </children>
+</AnchorPane>

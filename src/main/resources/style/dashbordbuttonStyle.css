@@ -1,0 +1,18 @@
+/* styles.css */
+
+.button-style {
+    -fx-background-color: #4CAF50; /* Green background color */
+    -fx-text-fill: white; /* White text color */
+    -fx-font-size: 14px; /* Font size */
+    -fx-font-weight: bold; /* Font weight */
+    -fx-padding: 10px 20px; /* Padding (top, right, bottom, left) */
+    -fx-border-radius: 5px; /* Border radius */
+}
+
+.button-style:hover {
+    -fx-background-color: #45a049; /* Darker green background color on hover */
+}
+
+.button-style:pressed {
+    -fx-background-color: #3498db; /* Change color when button is pressed */
+}
